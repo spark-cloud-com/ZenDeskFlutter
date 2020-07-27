@@ -3,7 +3,7 @@
 #
 Pod::Spec.new do |s|
   s.name             = 'zendesk'
-  s.version          = '0.0.1'
+  s.version          = '2.5.1'
   s.summary          = 'Flutter interface for Zendesk Mobile SDK'
   s.description      = <<-DESC
 Flutter interface for Zendesk Mobile SDK
@@ -18,6 +18,6 @@ Flutter interface for Zendesk Mobile SDK
   s.dependency 'ZDCChat'
   s.static_framework = true
   
-  s.ios.deployment_target = '8.0'
+  s.ios.deployment_target = '12.0'
 end
 

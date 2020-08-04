@@ -1,10 +1,10 @@
 import 'dart:async';
-
 import 'package:flutter/services.dart';
-
+​
 class Zendesk {
+
   static const MethodChannel _channel =
-      const MethodChannel('com.codeheadlabs.zendesk');
+  const MethodChannel('com.codeheadlabs.zendesk');
 
   Future<void> init(String accountKey, {String department, String appName}) async {
     await _channel.invokeMethod('init', <String, String>{
@@ -18,8 +18,7 @@ class Zendesk {
     await _channel.invokeMethod('setVisitorInfo', <String, String>{
       'name': name,
       'email': email,
-      'phoneNumber': phoneNumber,
-      'note': note,
+      'phoneNumber': phoneNumber
     });
   }
 

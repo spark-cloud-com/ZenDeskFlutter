@@ -3,7 +3,7 @@
 #
 Pod::Spec.new do |s|
   s.name             = 'zendesk'
-  s.version          = '2.5.1'
+  s.version          = '0.0.1'
   s.summary          = 'Flutter interface for Zendesk Mobile SDK'
   s.description      = <<-DESC
 Flutter interface for Zendesk Mobile SDK
@@ -14,10 +14,10 @@ Flutter interface for Zendesk Mobile SDK
   s.source           = { :path => '.' }
   s.source_files = 'Classes/**/*'
   s.public_header_files = 'Classes/**/*.h'
-  s.dependency 'Flutter'
-  s.dependency 'ZDCChat'
   s.static_framework = true
-  
+  s.dependency 'Flutter'
+  s.dependency 'ZendeskChatSDK'
   s.ios.deployment_target = '12.0'
-end
+  s.platform = '12.0'
 
+end
